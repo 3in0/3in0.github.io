@@ -13,26 +13,12 @@
   }
     
   body {
-  
-    /* Location of the image */
+
     background-image: url("../img/bg-large.jpg");
-    
-    /* Background image is centered vertically and horizontally at all times */
     background-position: center center;
-    
-    /* Background image doesn't tile */
     background-repeat: no-repeat;
-    
-    /* Background image is fixed in the viewport so that it doesn't move when 
-       the content's height is greater than the image's height */
     background-attachment: fixed;
-    
-    /* This is what makes the background image rescale based
-       on the container's size */
     background-size: cover;
-    
-    /* Set a background color that will be displayed
-       while the background image is loading */
     background-color: black;
 
     padding-top: 50px;
@@ -48,7 +34,14 @@ section {
     background-color: black;
     height: calc( 100vh - 100px);
     padding: 20px;
-    overflow-y: scroll;
+    overflow-y: auto;
+}
+
+.tech {
+
+    margin-left: 40px;
+    width: 30%;
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -58,6 +51,7 @@ section {
         background-image:  url("../img/bg-small.jpg");
         padding-top: 20px;
         padding-bottom: 20px;
+        font-size: 0.8em;
     
     }
 
@@ -67,6 +61,13 @@ section {
         height: calc( 100vh - 40px);
 
     }
+
+    .tech {
+
+        margin-left: 10px;
+
+    }
+
 }
 
 .cursor { 
@@ -93,9 +94,8 @@ section {
 
 }
  
-
 .blinking-cursor {
-    font-weight: 100;
+    font-weight: 600;
     color: white;
     -webkit-animation: 1s blink step-end infinite;
     -moz-animation: 1s blink step-end infinite;
