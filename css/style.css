@@ -1,0 +1,115 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    scrollbar-width: thin;
+    scrollbar-color: 'red';
+    scroll-behavior: smooth;
+
+    font-family: 'Barlow', sans-serif;
+      
+  }
+    
+  body {
+  
+    /* Location of the image */
+    background-image: url("../img/bg-large.jpg");
+    
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    
+    /* Background image is fixed in the viewport so that it doesn't move when 
+       the content's height is greater than the image's height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based
+       on the container's size */
+    background-size: cover;
+    
+    /* Set a background color that will be displayed
+       while the background image is loading */
+    background-color: black;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 1.5rem;
+
+}
+
+section {
+
+    width: 50%;
+    margin: auto;
+    background-color: black;
+    height: calc( 100vh - 100px);
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width: 767px) {
+    
+    body {
+
+        background-image:  url("../img/bg-small.jpg");
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+    }
+
+    section {
+
+        width: 80%;
+        height: calc( 100vh - 40px);
+
+    }
+}
+
+.cursor { 
+
+    color: #ADFF2F;
+
+}
+
+.dollar {
+
+    color: white;
+
+}
+
+.regular {
+
+    color: #E91E63;
+
+}
+
+.blue {
+
+    color: rgb( 53, 140, 214 );
+
+}
+ 
+
+.blinking-cursor {
+    font-weight: 100;
+    color: white;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #E91E63;
+    }
+  }
+  
