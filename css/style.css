@@ -1,0 +1,189 @@
+
+* {
+   
+    box-sizing: border-box;
+    
+    scrollbar-width: thin;
+    scrollbar-color: 'red';
+    scroll-behavior: smooth;
+
+      
+  }
+    
+  body {
+
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/bg-large.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 1.5rem;
+
+}
+
+section {
+
+    position : relative;
+    width: 50%;
+    margin: auto;
+    height: calc( 100vh - 100px);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#one {
+
+    font-family: "Courier New", monospace;
+    background-color: black;
+
+}
+  
+.listleft, .listright {
+    float:left;
+    margin:5px 0px;
+  }
+  
+  .listleft {
+    width:90%;
+    color:#00ffff;
+  }
+  
+  .listright {
+    width:10%;
+    text-align:right;
+  }
+  
+  
+  hr {
+    height:6px;
+    width:100%;
+    color:#0000ff;
+    background-color:#0000ff;
+    border:1px solid #0000ff;
+    margin:20px 0px;
+  }
+  
+  
+.tech {
+
+    margin-left: 40px;
+    width: 30%;
+
+}
+
+.fade {
+
+    animation: fade-away 1s;
+    animation-fill-mode: forwards;
+    
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+@keyframes fade-away {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity:0;
+    display: none;
+    }
+}
+
+#hide {
+  color: #e9e71e;
+
+}
+
+section p {
+  margin: 0px;
+
+}
+
+.done {
+
+  margin-bottom: 1rem;
+
+}
+
+@media only screen and (max-width: 767px) {
+    
+    body {
+
+        background-image:  url("../img/bg-small.jpg");
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 0.8em;
+    
+    }
+
+    section {
+
+        width: 80%;
+        height: calc( 100vh - 40px);
+
+    }
+
+    .tech {
+
+        margin-left: 10px;
+        width: 100%;
+
+    }
+
+}
+
+.cursor, a { 
+
+    color: #ADFF2F;
+
+}
+
+.dollar {
+
+    color: white;
+
+}
+
+.regular {
+
+    color: #E91E63;
+
+}
+
+.blue {
+
+    color: rgb( 53, 140, 214 );
+
+}
+ 
+.blinking-cursor {
+    font-weight: 600;
+    color: white;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #E91E63;
+    }
+  }
+  
